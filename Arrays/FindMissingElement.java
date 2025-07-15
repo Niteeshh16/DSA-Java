@@ -1,3 +1,5 @@
+package Arrays;
+
 // Find missing number in array from 0 to n
 public class FindMissingElement{
     public static void main(String[] args) {

@@ -12,7 +12,7 @@
 5. End
 */
 
-
+package Arrays;
 public class SecondLargest {
     static int secondLargest(int[] nums){
         int largest = 0;

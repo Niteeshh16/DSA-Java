@@ -1,3 +1,4 @@
+package Arrays;
 public class CheckArrayIsSorted {
     static boolean check(int[] nums) {
         for (int i = 0; i < nums.length-1; i++) {
