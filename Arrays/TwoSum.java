@@ -13,9 +13,28 @@ public class TwoSum {
         }
         return new int[]{-1, -1};
     }
-    public static void main(String[] args) {
-            int nums[] = {1,6,2,10,3};
-            int target = 7;
-        System.out.println(Arrays.toString(twoSum(nums,target)));
+    
+    static int[] twoPointer(int[] nums, int target){
+        int low = 0;
+        int high = nums.length-1;
+        while (low < high){
+            int sum = nums[low] + nums[high];
+            if (target== sum){
+                return new int[]{low+1, high+1};
+            } else if (sum <= target) {
+                low++;
+            }else {
+                high--;
+            }
+        }
+        return new int[2];
+    }
+    
+    
+        public static void main(String[] args) {
+            int nums[] = {2,7,11,15};
+            int target = 18;
+        //System.out.println(Arrays.toString(twoSum(nums,target)));
+            System.out.println(Arrays.toString(twoPointer(nums,target)));
     }
 }
